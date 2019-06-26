@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  api.serilog.file:
+    image: ${DOCKER_REGISTRY-}apiserilogfile
+    build:
+      context: .
+      dockerfile: Api.Serilog.File/Dockerfile
+    volumes:
+      - "C:\\Logs:/app/logs2"
