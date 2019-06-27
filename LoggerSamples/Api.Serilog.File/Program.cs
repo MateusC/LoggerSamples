@@ -13,7 +13,7 @@ namespace Api.Serilog.File
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseSerilog();
+                .UseSerilog()
+                .UseStartup<Startup>();
     }
 }

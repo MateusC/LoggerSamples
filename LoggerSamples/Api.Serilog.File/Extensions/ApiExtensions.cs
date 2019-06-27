@@ -12,7 +12,7 @@ namespace Api.Serilog.File
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
                 .WriteTo.File(
-                    path: $"{Environment.CurrentDirectory}\\logs4\\log.txt", 
+                    path: "log.txt", 
                     rollingInterval: RollingInterval.Day, 
                     rollOnFileSizeLimit: true, 
                     retainedFileCountLimit: 100)
